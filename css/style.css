@@ -1,0 +1,852 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@keyframes slide {
+    0% {
+        background-image: url('../img/bg1.jpg');
+    }
+    20% {
+        background-image: url('../img/bg2.jpg');
+    }
+    40% {
+        background-image: url('../img/bg3.jpg');
+    }
+    60% {
+        background-image: url('../img/bg4.jpg');
+    }
+    80% {
+        background-image: url('../img/bg5.jpg');
+    }
+    100% {
+        background-image: url('../img/bg6.jpg');
+    }
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.burger {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 41px;
+    height: 19px;
+}
+.burger1 {
+    width: 22px;
+    height: 3px;
+    background-color: black;
+}
+.burger2 {
+    width: 32px;
+    height: 3px;
+    background-color: black;
+}
+.burger3 {
+    width: 42px;
+    height: 3px;
+    background-color: black;
+}
+
+button {
+    cursor: pointer;
+}
+
+nav {
+    width: 100%;
+    padding: 30px 80px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+.logo {
+    display: block;
+    margin: 0 auto;
+}
+.btn {
+    height: 45px;
+    border-radius: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+}
+.button_partner {
+    width: 180px;
+    border: 1px solid #DF1024;
+    margin-right: 40px;
+    background-color: #fff;
+}
+.button_login {
+    width: 70px;
+    border: 1px solid #000000;
+    background-color: #fff;
+}
+.header {
+    height: 600px;
+    background-color: rgb(147, 144, 144);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: slide 40s infinite steps(1, start);
+}
+.header_wrapper {
+    height: 600px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+.title {
+    max-width: 550px;
+    min-height: 114px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 100%;
+    color: #FFFFFF;
+    margin-bottom: 50px;
+}
+
+.button_auth {
+    width: 180px;
+    height: 55px;
+    background: #DF1024;
+    box-shadow: 0px 0px 71px rgba(223, 16, 36, 0.55);
+    border-radius: 10px;
+    border: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+.button_auth_second {
+    width: 180px;
+    height: 45px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    box-shadow:none;
+    border: none;
+}
+
+.info {
+    width: 100%;
+    min-height: 570px;
+    background: #0E4987;
+    padding-top: 70px;
+    padding-bottom: 55px;
+}
+
+.info_wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+.info_title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+.info_descr {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-bottom: 68px;
+}
+.info_cards {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.info_card {
+    width: 290px;
+    height: 290px;
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+.card_header {
+    width: 290px;
+    height: 132px;
+    background: linear-gradient(180deg, #041629 0%, #0D3661 100%);
+    border-radius: 10px 10px 0px 0px;
+    position: relative;
+}
+.card_header img {
+    position: absolute;
+    top: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.card_footer {
+    padding: 25px 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.card_footer_title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 23px;
+}
+.card_footer_descr {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #000000;
+}
+
+.translation {
+    width: 100%;
+    padding: 100px 80px 78px 80px;
+    min-height: 501px;
+    background: linear-gradient(180deg, rgba(4, 22, 41, 0) 67.83%, rgba(4, 22, 41, 0.05) 100%);
+}
+.translation_wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.translation_info {
+    width: 523px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+.descr_label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 111px;
+    height: 30px;
+    border: 1px solid #DF1024;
+    filter: drop-shadow(0px 0px 71px rgba(223, 16, 36, 0.55));
+    border-radius: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #DF1024;
+    margin-bottom: 10px;
+}
+.descr_title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+.descr_descr {
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+
+.audience {
+    padding: 85px 80px 0px 80px;
+    min-height: 402px;
+}
+.audience_img {
+    box-shadow: 0px -4px 34px -10px black;
+}
+
+.audience_wrapper {
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.salary {
+    padding: 85px 80px 0px 80px;
+    min-height: 402px;
+}
+.salary_img {
+    box-shadow: -1px -4px 147px -62px black;
+}
+
+.salary_wrapper {
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.salary_second {
+    padding: 102px 80px 86px 107px;
+}
+
+.salary_second_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.loging {
+    padding: 62px 80px 0px 180px;
+}
+
+.loging_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.benefits {
+    width: 100%;
+    min-height: 586px;
+    background: url('../img/benefits.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 56px 20px 40px 20px;
+}
+.benefits_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.benefits_title {
+    width: 142px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ffffff;
+    filter: drop-shadow(0px 0px 71px rgba(255, 255, 255, 0.55));
+    border-radius: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+.benefits_subtitle {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    color: #FFFFFF;
+    margin-bottom: 50px;
+}
+.benefits_cols {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-bottom: 90px;
+}
+.benefits_col1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+.benefits_col2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+.benefits_col1 ul li {
+    width: 477px;
+}
+.benefits_col2 ul li {
+    width: 477px;
+}
+.benefits_col2 ul li {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    line-height: 40px;
+
+}
+.benefits_col1 ul li {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    line-height: 40px;
+
+}
+.partner {
+    padding: 111px 0px 71px 0px;
+}
+.partner_wrapper {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.pertner_title_mobile {
+    display: none;
+}
+.pertner_btn_mobile {
+    display: none;
+}
+.partner_left {
+    display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.pertner_title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    color: #000000;
+    margin-bottom: 49px;
+}
+.pertner_btn {
+    width: 289px;
+    height: 55px;
+    left: 0px;
+    top: 168px;
+    background: #DF1024;
+    border-radius: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    border: none;
+}
+.partner_card {
+    width: 180px;
+    height: 272px;
+}
+.parner_card_img {
+    width: 180px;
+    height: 180px;
+    border: 2px solid #DF1024;
+    border-radius: 50px 50px 50px 0px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:16px;
+}
+.partner_step {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 6px;
+}
+.partner_info {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+.apps {
+    width: 100%;
+    height: 145px;
+    background: #0E4987;
+}
+.apps_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 145px;
+}
+.apps_wrapper img{
+    width: 175px;
+    margin: 0 26px;
+}
+.footer {
+    width: 100%;
+    height: 319px;
+    padding: 59px 0px 44px 0px;
+}
+.footer_wrapper {
+    display:flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    
+}
+.footer_item {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+.footer_item_title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+.footer_ul {
+    list-style: none;
+}
+.footer_ul a{
+    text-decoration: none;
+}
+.footer_ul li{
+    margin-bottom: 15px;
+}
+.col2 {
+}
+.col3 {
+}
+.col4 {
+}
+
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+    .info_card {
+        width: 210px;
+    }
+    .card_header {
+        width: 210px;
+    }
+    .card_header img {
+        width: 180px;
+        top: -10px;
+    }
+    .card_footer {
+        padding: 17px 15px;
+    }
+    .card_footer_title {
+        font-size: 18px;
+    }
+    .translation {
+        padding: 80px 40px 63px 40px;
+        height: 425px;
+    }
+    .translation_img {
+        width: 500px;
+    }
+    .translation_info {
+        width: 360px;
+    }
+    .salary_second {
+        padding: 80px 40px 63px 40px;
+        height: 425px;
+    }
+    .salary_second_img {
+        width: 500px;
+    }
+    .salary_second_info {
+        width: 360px;
+    }
+    .loging {
+        padding: 30px 40px 75px 40px;
+        height: 300px;
+    }
+    .loging_img {
+        width: 500px;
+    }
+    .loging_info {
+        width: 360px;
+    }
+    .pertner_btn {
+        width: 200px;
+    }
+    .partner_card {
+        width: 140px;
+    }
+    .parner_card_img {
+        width: 140px;
+        height: 140px;
+    }
+    .parner_card_img img{
+        width: 60%;
+    }
+    .footer {
+        height: 250px;
+        padding: 46px 0px 28px 0px;
+    }
+    .translation {
+        padding: 80px 40px 63px 40px;
+        min-height: 425px;
+    }
+    
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+    .info_card {
+        width: 24%;
+        height: 265px;
+    }
+    .card_header {
+        width: 100%;
+        height: 123px;
+    }
+    .card_header img {
+        width: 135px;
+        top: 10px;
+    }
+    
+    .card_footer {
+        padding: 14px 10px;
+    }
+    .card_footer_title {
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+    .card_footer_descr {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .translation {
+        padding: 60px 50px 50px 50px;
+    }
+    .translation_wrapper {
+        flex-wrap: wrap;
+    }
+    .translation_img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .translation_info {
+        width: 100%;
+    }
+    .audience {
+        padding: 50px 30px 0px 30px;
+        height: 370px;
+    }
+    .audience_img {
+        width: 340px;
+        margin-right: 50px;
+    }
+    .salary {
+        height: 250px;
+        padding: 50px 30px 0px 30px;
+    }
+    .salary_img {
+        width: 340px;
+        margin-left: 50px;
+    }
+    .salary_second {
+        height: 370px;
+        padding: 50px 30px 0px 30px;
+    }
+    .salary_second_img {
+        width: 340px;
+        margin-right: 50px;
+    }
+    .loging {
+        height: 370px;
+        padding: 50px 30px 0px 30px;
+    }
+    .loging_img {
+        width: 430px;
+        margin-left: 50px;
+    }
+    .pertner_btn {
+        width: 200px;
+    }
+    .partner_card {
+        width: 140px;
+    }
+    .parner_card_img {
+        width: 140px;
+        height: 140px;
+    }
+    .parner_card_img img{
+        width: 60%;
+    }
+    .partner_left {
+        display: none;
+    }
+    .pertner_title_mobile {
+        display: block;
+        text-align: center;
+    }
+    .pertner_btn_mobile {
+        display: block;
+        margin: 0 auto;
+    }
+    .benefits_cols {
+        flex-wrap: wrap;
+    }
+    .benefits_col1 {
+        margin-bottom: 25px;
+    }
+    
+}
+@media screen and (max-width: 767px) {
+    .buttons {
+        display: none;
+    }
+    .info_wrapper {
+        align-items: center;
+    }
+    
+    .info {
+        min-height: 1600px;
+    }
+    .info_cards {
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .info_card {
+        margin-bottom: 55px;
+    }
+    .translation_img {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    .translation_info {
+        width: 100%;
+    }
+    .audience_wrapper {
+        flex-wrap: wrap;
+    }
+    .audience_img {
+        margin-bottom: 55px;
+    }
+    .salary_wrapper {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    .salary_img {
+        margin-bottom: 55px;
+        width: 100%;
+    }
+    .salary_transition {
+        margin-bottom: 55px;
+    }
+    .salary_second {
+        padding: 50px 50px 20px 50px;
+    }
+    .salary_second_wrapper {
+        flex-wrap: wrap;
+    }
+    .salary_second_img {
+        width: 100%;
+        margin-bottom: 55px;
+    }
+    .loging {
+        padding: 62px 40px 30px 40px;
+    }
+    .loging_wrapper {
+        flex-direction: column;
+    }
+    .loging_img {
+        width: 100%;
+        margin-bottom: 55px;
+    }
+    .benefits_cols {
+        flex-wrap: wrap;
+    }
+    .benefits_col1 {
+        margin-bottom: 25px;
+        width: 100%;
+    }
+    .benefits_col2 {
+        width: 100%;
+    }
+    .partner_wrapper {
+        flex-direction: column;
+    }
+    .pertner_btn {
+        display: none;
+    }
+    .pertner_btn_mobile {
+        display: block;
+        margin: 20px auto;
+    }
+    .partner_card {
+        margin-bottom: 30px;
+    }
+    .footer_wrapper {
+        flex-direction: column;
+        align-items:center;
+    }
+    .footer_wrapper img{
+        margin-bottom: 30px;
+    }
+    .col2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .col3 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .col4 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .apps_wrapper img {
+        width: 140px;
+        margin: 0 15px;
+    }
+    .benefits_col1 ul li {
+        width: 100%;
+    }
+    .benefits_col2 ul li {
+        width: 100%;
+    }
+    .translation, .audience, .salary, .salary_second, .loging {
+        padding: 50px 10px 30px 10px;
+    }
+    .benefits_subtitle {
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 1280px) {
+    .container {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+}
