@@ -3,7 +3,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+@font-face {
+	font-family: 'Inter'; 
+	src: url('../fonts/Inter-Bold.ttf'); 
+}
 
+@font-face {
+	font-family: 'Inter-Regular'; 
+	src: url('../fonts/Inter-Regular.ttf'); 
+}
 @keyframes slide {
     0% {
         background-image: url('../img/bg1.jpg');
@@ -249,7 +257,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 111px;
+    min-width: 111px;
     height: 30px;
     border: 1px solid #DF1024;
     filter: drop-shadow(0px 0px 71px rgba(223, 16, 36, 0.55));
@@ -261,6 +269,7 @@ nav {
     line-height: 19px;
     color: #DF1024;
     margin-bottom: 10px;
+    padding: 0 10px;
 }
 .descr_title {
     font-family: 'Inter';
