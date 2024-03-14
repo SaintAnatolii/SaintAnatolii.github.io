@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+@keyframes loaderAnimation {
+    0% {
+        width: 1px;
+    }
+
+    100% {
+        width: 250px;
+    }
+}
+
+.loader {
+    color: #fff;
+    position: relative;
+}
+
+#loader_count::before {
+    content: '0';
+    display: inline-block;
+    animation: countAnimation 3s linear forwards;
+}
+
+#loader_line {
+    display: inline-block;
+    width: 1px;
+    height: 2px;
+    border-radius: 10px;
+    background-color: red;
+    animation: loaderAnimation 3s linear forwards;
+}
+
+@keyframes countAnimation {
+    0% {
+        content: '0';
+    }
+
+    10% {
+        content: '10';
+    }
+
+    20% {
+        content: '20';
+    }
+
+    30% {
+        content: '30';
+    }
+
+    40% {
+        content: '40';
+    }
+
+    50% {
+        content: '50';
+    }
+
+    60% {
+        content: '60';
+    }
+
+    70% {
+        content: '70';
+    }
+
+    80% {
+        content: '80';
+    }
+
+    90% {
+        content: '90';
+    }
+
+    100% {
+        content: '100';
+    }
+}
+
+.container {
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cmd {
+    width: 98%;
+    border: 2px solid green;
+    background-color: #202020;
+    color: rgb(0, 192, 0);
+    height: 50px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+#output {
+    width: 98%;
+    height: 90%;
+    border: 2px solid rgb(0, 255, 0);
+    background-color: #202020;
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+    padding: 10px;
+    color: rgb(0, 192, 0);
+    font-family: 'Courier New', Courier, monospace;
+    overflow-y: auto;
+}
+.moderator {
+    color: aqua;
+}
+.alert {
+    color: rgb(255, 132, 0);
+}
+.police {
+    color: rgb(255, 0, 0);
+}
+.user {
+    color: rgb(255, 255, 255);
+}
+.mems {
+    color: rgb(157, 45, 255);
+}
